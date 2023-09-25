@@ -1,0 +1,44 @@
+table{
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 100%;
+    padding: 50%;
+}
+#tabla th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    width: 1px;
+}
+
+#Foto{
+    display: flex  ;
+    justify-content: center;
+}
+#Foto img{
+    height: 400px ;
+    width: 400px;
+}
+
+h1,h3,p{
+    text-align: center;
+}
+html{
+    background-color:azure;
+}
+#Lista{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    border-right: 1px solid black;
+    padding-right: 7px;
+    color :black;
+   
+}
+nav{
+   text-align: right;
+   background-color: hotpink;
+   padding: 25px;
+   margin: 10px;
+}
