@@ -1,0 +1,116 @@
+.header{
+text-align: center;
+background-color: #2962A7 ;
+background-image: url('img/wallpaper2.jpg');
+height: 303px;
+color:beige;
+font-family: Arial, Helvetica, sans-serif;
+}
+.HeaderDesc{
+    color: #D7434F;
+}
+.navbar{
+    background-color: #BBACAF;
+    color: white;
+    
+    padding: 10px;
+
+
+}
+.navbar a{
+    text-decoration: none; /*par aquitar el subrayado*/
+    margin-right: 10px;
+}
+
+.navbar a:hover{
+color: #DAD4E0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.article h2{
+color: #385072 ;
+}
+.article h5{
+    color: #CB384B ;
+}
+.article{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   width: 70%;
+    border-left:6px solid #BBACAF ;
+    flex: 3;
+    margin-left: 5px;
+}
+.fakeimg{
+    color: #BBACAF;
+    width: 70%;
+}
+
+.side h2{
+color: #385072;
+}
+
+.side{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    flex: 1;
+
+}
+.side h3{
+    color: #385072 ;
+}
+.side a{
+    color:#385072;
+    text-decoration: none;
+}
+
+
+.toursnews{
+    background-color: #BBACAF;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.toursnews img{
+   border-radius: 50px;
+}
+.toursnews a{
+    font-weight:bold;
+    text-decoration: none; 
+    color: white;
+}
+.toursnews a:hover{
+    background-color: #DAD4E0  ;
+    color: #BBACAF ;
+ 
+}
+
+.footer h2{
+color: #385072;
+}
+
+.footer h5{
+color:#CB384B;
+}
+.footer{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    background-color: #9B847B ;
+    background-image: url('img/footer.jpg');
+    color: white;
+    padding: 10px;
+}
+.main{
+    display: flex;
+}
+@media(max-width:768px){
+    .main{
+        flex-direction: column;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
