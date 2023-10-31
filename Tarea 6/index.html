@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tarea 6 - Beberly Cubillo Méndez</h1>
+    <hr>
+    <div class="title">Control de flujo</div>
+    <div class="definition">El control de flujo se refiere a cómo se ejecutan las instrucciones en un programa de
+        acuerdo con ciertas condiciones. Ayuda a dirigir el flujo de ejecución en diferentes direcciones:</div>
+    <div class="example">
+        Ejemplo:
+        <pre>
+            <code>
+                Estas son dos estructuras muy comunes. 
+                if (condición) {
+                    // código a ejecutar si la condición es verdadera
+                  } else {
+                    // código a ejecutar si la condición es falsa
+                  }
+
+                switch (expresión) {
+                    case valor1:
+                      // código a ejecutar si expresión es igual a valor1
+                      break;
+                    case valor2:
+                      // código a ejecutar si expresión es igual a valor2
+                      break;
+                    default:
+                      // código a ejecutar si no coincide con ningún caso anterior
+                  }                 
+            </code>
+            <p>Ejemplo</p>
+    <label for="number">Ingresa un número:</label>
+    <input type="number" id="number" placeholder="Número" />
+    <button onclick="calcularCuadradoHandler()">Calcular cuadrado</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+        </pre>
+    </div>
+<hr>
+
+    <div class="title">Manejo de errores</div>
+    <div class="definition">Se utiliza para controlar situaciones excepcionales o errores durante la ejecución de un
+        programa. Permite capturar y gestionar estos errores de manera adecuada. </div>
+    <div class="example">
+        Ejemplo:
+        <pre>
+            <code>
+                Este es un ejemplo del manejo de errores
+                try {
+                    // código que puede generar una excepción
+                  } catch (error) {
+                    console.log(error.message); // muestra el mensaje de error
+                    console.log(error.name); // muestra el nombre del tipo de error
+                    // otras acciones para manejar el error
+                  }                 
+            </code>
+        </pre>
+        
+    </div>
+    <hr>
+
+    <div class="title">Bucles e iteración </div>
+    <div class="definition">En esta podemos encontrar tres bucles:
+        <br> -El bucle for se utiliza cuando se conoce de antemano la cantidad exacta de veces que se desea repetir un
+        bloque de código.
+        <br> -El bucle while se utiliza cuando no se conoce de antemano cuántas veces se desea repetir un bloque de
+        código, pero se tiene una condición que debe cumplirse para que la repetición continúe.
+        <br> -El bucle do...while es similar al bucle while, pero con una diferencia importante: el bloque de código
+        dentro del bucle se ejecuta al menos una vez antes de verificar la condición de continuación.
+    </div>
+    <div class="example">
+        Ejemplo:
+        <pre>
+            <code>
+                Este es un ejemplo de ellos 
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine("El valor de i es: " + i);
+                } 
+            </code>
+        </pre>
+        <div class="container">
+            <h1>Ejemplos</h1>
+            <ul id="list"></ul>
+          
+            <script src="script.js"></script>
+          </div>
+    </div>
+<hr>
+    <div class="title"> Funciones </div>
+    <div class="definition">
+        <br> Para llamar a una función, simplemente escribes el nombre de la función seguido de paréntesis "()"
+    </div>
+    <div class="example">
+        Ejemplo:
+        <pre>
+            <code>
+                Asi se define: 
+                def nombre_de_funcion(argumentos):
+                # Código de la función
+                # Puedes realizar operaciones y retornar un valor si es necesario
+            
+                Así se llama:
+                nombre_de_funcion(argumentos) 
+
+            </code>
+        </pre>
+        <p>Calculadora de suma:</p>
+    <label for="num1">Primer número:</label>
+    <input type="number" id="num1" />
+    <br />
+    <label for="num2">Segundo número:</label>
+    <input type="number" id="num2" />
+    <br />
+    <button onclick="sumar()">Sumar</button>
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+    </div>
+<hr>
+    <div class="title">Expresiones y operadores </div>
+    <div class="definition">La asignación se utiliza para asignar un valor a una variable, los operadores aritméticos se
+        utilizan para realizar operaciones matemáticas en los valores numéricos,y los operadores lógicos se utilizan
+        para
+        evaluar expresiones lógicas y devuelven un resultado verdadero o falso.</div>
+    <div class="example">
+        Ejemplo:
+        <pre>
+            <code>
+               Este es un ejemplo de opradores arritmeticos: 
+                int a = 10;
+                int b = 3;
+                
+                int suma = a + b; // Suma
+                int resta = a - b; // Resta
+                int multiplicacion = a * b; // Multiplicación
+                int division = a / b; // División
+                
+                Console.WriteLine(suma); // Imprime 13
+                Console.WriteLine(resta); // Imprime 7
+                Console.WriteLine(multiplicacion); // Imprime 30
+                Console.WriteLine(division); // Imprime 3
+                                 
+            </code>
+        </pre>
+        <div class="container7">
+            <h1>Calculadora de Multiplicación</h1>
+            <label for="numero1">Número 1:</label>
+            <input type="number" id="numero1" placeholder="Número 1">
+    
+            <label for="numero2">Número 2:</label>
+            <input type="number" id="numero2" placeholder="Número 2">
+    
+            <button onclick="calcularMultiplicacion()">Calcular Multiplicación</button>
+    
+            <p id="result2"></p>
+    
+            <script src="script.js"></script>
+        </div>
+    </div>
+<hr>
+    <div class="title">Números y fechas </div>
+    <div class="definition">En Visual los objetos Number, Math y Date son herramientas que te permiten
+        trabajar con números y fechas en JavaScript. El objeto Number se utiliza para operaciones matemáticas con
+        números, el objeto Math proporciona funciones matemáticas avanzadas, y el objeto Date se encarga de manipular
+        fechas y horas. Estos objetos te ayudan a realizar cálculos numéricos y manipulaciones de fechas de manera
+        efectiva en tus programas..</div>
+    <div class="example">
+        Ejemplo:
+        <pre>
+            <code>
+                Uso del objeto Number
+                let num = 3.14159;
+                console.log(num.toFixed(2)); // Salida: 3.14
+                console.log(Number.parseInt("10")); // Salida: 10
+                
+                Uso del objeto Math
+                console.log(Math.sqrt(16)); // Salida: 4
+                console.log(Math.max(10, 5, 8)); // Salida: 10
+                
+                Uso del objeto Date
+                let currentDate = new Date();
+                console.log(currentDate.getFullYear()); // Salida: el año actual
+                console.log(currentDate.getMonth()); // Salida: el mes actual (0-11)
+                console.log(currentDate.getDate()); // Salida: el día del mes actual
+                console.log(currentDate.getHours()); // Salida: la hora actual
+                              
+            </code>
+        </pre>
+        <div class="container3">
+            <h1>Calculadora de Edad</h1>
+            <p>Introduce tu fecha de nacimiento y calcularemos tu edad:</p>
+        
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento">
+        
+            <button onclick="calcularEdad()">Calcular Edad</button>
+        
+            <p id="resultado2"></p>
+        
+            <script src="script.js"></script>
+          </div>
+    </div>
+<hr>
+    <div class="title">Formateo de texto y Colecciones indexadas </div>
+    <div class="definition">El formateo de texto implica manipular y presentar cadenas de texto en un formato
+        específico. Las cadenas literales son secuencias de caracteres encerradas entre comillas y se usan para
+        representar texto en un programa. Los objetos String son estructuras de datos que representan secuencias de
+        caracteres y permiten realizar operaciones en ellas. Las colecciones indexadas, como los arreglos, almacenan
+        elementos con índices únicos para acceder a ellos. Los arreglos tipados especifican el tipo de datos que pueden
+        contener y brindan seguridad de tipo. Visual Studio Code es un entorno de desarrollo utilizado por programadores
+        para escribir y depurar código en diversos lenguajes de programación</div>
+    <div class="example">
+        Ejemplo:
+        <pre>
+            <code>
+                nombre = "Juan"
+                edad = 25
+                mensaje = "Hola, mi nombre es {} y tengo {} años.".format(nombre, edad)
+                print(mensaje)
+
+                Al ejecutarlo se mostraria asi:
+                Hola, mi nombre es Juan y tengo 25 años.
+                            
+            </code>
+        </pre>
+        <div class="container3">
+            <h1>Formateo de Texto</h1>
+            <label for="product">Ingresa el nombre del producto:</label>
+            <input type="text" id="product" placeholder="Producto" />
+            <label for="price">Ingresa el precio del producto:</label>
+            <input type="number" id="price" placeholder="Precio" />
+            <button onclick="formatProduct()">Formatear Producto</button>
+            <p id="formattedProduct"></p>
+          
+            <script src="script.js"></script>
+          </div>
+    </div>
+<hr>
+    <div class="title">Document Object Model </div>
+    <div class="definition">El DOM es una representación en memoria de un documento HTML que
+        permite acceder y manipular elementos de una página web. Puedes encontrar elementos en el DOM utilizando métodos
+        como buscar por ID, nombre de etiqueta o clase, selectores CSS, o mediante colecciones de objetos.</div>
+    <div class="example">
+        Este es un Ejemplo:
+        <pre>
+            <code>
+                  id="titulo">Hola, mundo!      
+                  // Encontrar elemento por ID
+                  const tituloElemento = document.getElementById('titulo');
+
+                  // Modificar el contenido del elemento
+                  tituloElemento.textContent = "¡Hola, OpenAI!";
+
+                  // Imprimir el contenido del elemento modificado
+                  console.log(tituloElemento.textContent); // Imprime: "¡Hola, OpenAI!"                    
+            </code>
+        </pre>
+        <h2 id="heading">Texto inicial</h2>
+
+        <button onclick="cambiarColor()">Cambiar color</button>
+    </div>
+    <script> src="script.js" </script>
+    <hr>
+</body>
+
+</html>

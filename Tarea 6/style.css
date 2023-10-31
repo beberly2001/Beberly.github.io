@@ -1,0 +1,30 @@
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Centra el texto horizontalmente */
+    color: hotpink; /* Color sutil en el centro, puedes ajustar el valor según tus preferencias */
+    font-family: "Arial", sans-serif; /* Fuente atractiva, puedes cambiarla por cualquier otra */
+}
+
+
+.definition {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left; 
+    color:black; 
+}
+
+
+.example {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left; 
+    color:black; 
+}
+body {
+    max-width: 1000px; /* Establece un ancho máximo para el cuerpo */
+    margin: 0 auto; /* Centra el cuerpo horizontalmente en la página */
+}
