@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Crédito Happy Eart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/forms.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <nav class="menu">
+                <ul>
+                    <li class="btn_1"><a href="home.html">Home</a></li>
+                    <li class="btn_2"><a href="weather.html">Tiempo</a></li>
+                    <li class="btn_3"><a href="credito.html">Crédito</a></li>
+                    <li class="btn_4"><a href="#">Servicios</a></li>
+                    <li class="btn_5"><a href="contacto.html">Contáctenos</a></li>                </ul>
+            </nav>
+            <img src="images/logo.jpg" alt="" name="logo" width="251" height="45" id="logo" />
+        </header>
+
+        <div id="main">
+            <ul>
+                                <li><H2>Cotizacion</H2>   <span class="required_notification">* Datos requeridos</span></li>
+
+            </ul>
+            <form action="#"onsubmit="cotizar()" class="contact_form" name="form">
+            <ul>
+                <li>
+                    <label for="">Nombre:</label>
+                    <input type="text" placeholder="jesus castilla" name="nombre" required>
+                </li>
+                <li>
+                        <label for="">Email:</label>
+                        <input type="email" placeholder="jesus@gmail.com" name="email"required>
+                    </li>
+                    <li>
+                            <label for="">Fecha de Solicitud:</label>
+                            <input type="date"  name="fecha" readonly >
+                        </li>
+                        <li>
+                                <label for="">Metros de Construccion:</label>
+                                <input type="number" placeholder="300.00" step="0.01" name="metrosC" required>
+                            </li>
+                        <li>
+                                <label for="">Metros de Terreno:</label>
+                                <input type="number" placeholder="400.00" step="0.01" name="metrosT" required>
+                            </li>
+                            <li>
+                                <label for="">Acabado de Lujo:</label>
+                                <input type="checkbox" name="lujo" id="lujo">
+                            </li>
+                            <li>
+                                <label for="">Ubicacion</label>
+                                <input type="radio" id="rural" name="ubicacion" required value="rural">Rural
+                              
+                                <li>   <input  name="ubicaion" id="urbana" required value="urbana" type="radio"style="margin-left:160px;boder:none;">Urbana</li>
+                            </li>
+                            <li>
+                                <label for="">Cantidad de baños completos:</label>
+                                <input type="number"min="1" name="banos" required >
+                            </li>
+                            <li>
+                                    <label for="">Cochera:</label>
+                                    <input type="checkbox"  onclick="document.form.carros.value=1" name="cochera" id="cochera" >
+                                </li>
+                                <li>
+                                    <label for="">Cantidad de Carros:</label>
+                                    <input type="number" name="carros"  min="1" max="3" >
+                                </li>
+                                <li>
+                                    <label for="">Extras:</label>
+                                    <input type="checkbox"  id="balcon">Balcon
+                                    <input type="checkbox"  id="parrilla">Parrilla
+                                    <input type="checkbox"  id="piscina">Piscina
+                                    <input type="checkbox"  id="terraza">Terraza
+
+                                </li>
+                                
+                                <li>
+                                    <label for="">Prima:</label>
+                                    <input type="number" name="prima" required>
+                                </li>
+                           
+                                <li><button class="submit" type="submit" >Cotizar</button></li>
+                                <li><button class="submit" type="button" onclick="mostrarcotizacion()" >Mostrar Cotizacion con detalle</button></li>
+
+                            
+            </ul>
+
+            </form>
+            <table ><tr>
+                <th>Cotizacion con detalle</th>
+
+            </tr>
+            <tbody id="mostrar"></tbody>
+        
+        </table>
+           
+        </div>
+
+        <footer id="footer">
+            <p>
+                <a href="home.html">Home</a> | <a href="weather.html">Tiempo</a> | <a href="credito.html">Crédito</a> | <a href="#">Servicios</a> | <a href="contacto.html">Contáctenos</a><br />
+                Copyright &copy; Real State Happy Eart
+            </p>
+        </footer>
+    </div>
+    <script src="scr/credito.js"></script>
+</body>
+</html>
